@@ -76,7 +76,8 @@ table booking availability, ratings, and cost analysis through interactive visua
 <h2> Dashboard Preview</h2>
 
 <p align="center">
-  <img src="YOUR_DASHBOARD_IMAGE_LINK_HERE" width="800"/>
+  <img src="<img width="1309" height="501" alt="image" src="https://github.com/user-attachments/assets/3da5d7d1-d64a-4286-bb86-439e7892216f" />
+" width="800"/>
 </p>
 
 <h2> How to Use</h2>
