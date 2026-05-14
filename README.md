@@ -1,212 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Restaurant Analytics Dashboard</title>
+<h1 align="center">🍽️ Zomato Restaurant Analysis (Excel Dashboard Project)</h1>
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#f4f6f9;
-      margin:0;
-      padding:0;
-      color:#333;
-    }
+<h2> Project Overview</h2>
+<p>
+This project focuses on analyzing Zomato restaurant data using Microsoft Excel to generate meaningful business insights.
+The dashboard helps understand customer preferences, restaurant trends, online ordering behavior,
+table booking availability, ratings, and cost analysis through interactive visualizations.
+</p>
 
-    .container{
-      width:90%;
-      max-width:1100px;
-      margin:40px auto;
-      background:#fff;
-      padding:40px;
-      border-radius:12px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    }
+<h2> Objective</h2>
+<p>To analyze restaurant data and answer key business questions that help in:</p>
 
-    h1{
-      text-align:center;
-      color:#1f4e79;
-      margin-bottom:10px;
-    }
+<ul>
+  <li>Understanding customer engagement trends</li>
+  <li>Identifying popular restaurant categories</li>
+  <li>Analyzing online ordering and booking patterns</li>
+  <li>Comparing restaurant ratings and pricing</li>
+</ul>
 
-    .subtitle{
-      text-align:center;
-      color:#666;
-      margin-bottom:40px;
-    }
+<h2> Business Questions</h2>
 
-    h2{
-      color:#1f4e79;
-      border-bottom:2px solid #e5e5e5;
-      padding-bottom:8px;
-      margin-top:35px;
-    }
+<ol>
+  <li>Which restaurant category received the highest customer votes?</li>
+  <li>Which restaurant type has the highest average rating?</li>
+  <li>What is the average cost for two people across restaurant categories?</li>
+  <li>How many restaurants support online ordering?</li>
+  <li>How many restaurants provide table booking facilities?</li>
+  <li>Which restaurant category is most preferred by customers?</li>
+  <li>What is the relationship between restaurant ratings and customer votes?</li>
+  <li>Which category offers the best balance between cost and ratings?</li>
+</ol>
 
-    p{
-      line-height:1.7;
-    }
+<h2> Key Insights</h2>
 
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:20px;
-    }
+<ul>
+  <li>Dining restaurants received the highest number of customer votes</li>
+  <li>Online ordering is supported by a large percentage of restaurants</li>
+  <li>Some restaurant categories have higher average ratings despite lower costs</li>
+  <li>Table booking facilities are available in limited restaurants</li>
+  <li>Customer engagement varies significantly across restaurant types</li>
+</ul>
 
-    table th{
-      background:#1f4e79;
-      color:white;
-      padding:12px;
-      text-align:left;
-    }
+<h2> Final Conclusion</h2>
 
-    table td{
-      padding:12px;
-      border-bottom:1px solid #ddd;
-    }
+<ul>
+  <li>Restaurants with online ordering tend to attract more customers</li>
+  <li>Dining category shows strong customer engagement</li>
+  <li>Affordable restaurants with good ratings perform better</li>
+  <li>Business owners can improve customer experience using booking facilities</li>
+</ul>
 
-    ul{
-      line-height:1.8;
-    }
+<h2> Tools & Skills Used</h2>
 
-    .footer{
-      text-align:center;
-      margin-top:40px;
-      color:#777;
-      font-size:14px;
-    }
+<ul>
+  <li>Microsoft Excel</li>
+  <li>Pivot Tables</li>
+  <li>Pivot Charts</li>
+  <li>Data Cleaning</li>
+  <li>Data Visualization</li>
+  <li>Dashboard Design</li>
+  <li>Slicers & Interactive Filters</li>
+</ul>
 
-    .badge{
-      display:inline-block;
-      background:#1f4e79;
-      color:white;
-      padding:8px 14px;
-      border-radius:20px;
-      margin:5px;
-      font-size:14px;
-    }
+<h2> Dataset Columns Used</h2>
 
-  </style>
-</head>
-<body>
+<ul>
+  <li><b>name</b> – Restaurant Name</li>
+  <li><b>online_order</b> – Online Ordering Availability</li>
+  <li><b>book_table</b> – Table Booking Availability</li>
+  <li><b>rate</b> – Restaurant Rating</li>
+  <li><b>votes</b> – Customer Votes</li>
+  <li><b>approx_cost(for two people)</b> – Average Cost for Two People</li>
+  <li><b>listed_in(type)</b> – Restaurant Category</li>
+</ul>
 
-  <div class="container">
+<h2> Dashboard Preview</h2>
 
-    <h1>Restaurant Analytics Dashboard</h1>
+<p align="center">
+  <img src="YOUR_DASHBOARD_IMAGE_LINK_HERE" width="800"/>
+</p>
 
-    <p class="subtitle">
-      Interactive Excel Dashboard for Restaurant Business Analysis
-    </p>
+<h2> How to Use</h2>
 
-    <h2>Project Overview</h2>
+<ol>
+  <li>Download the Excel dashboard file</li>
+  <li>Open the dashboard in Microsoft Excel</li>
+  <li>Use slicers and filters for interactive analysis</li>
+  <li>Explore charts and business insights</li>
+</ol>
 
-    <p>
-      This project is an interactive Restaurant Analytics Dashboard created using Microsoft Excel.
-      The dashboard helps analyze restaurant business performance, customer engagement,
-      online ordering trends, ratings, voting patterns, and dining costs through
-      dynamic visualizations and interactive filters.
-    </p>
+<h2> Learnings</h2>
 
-    <h2>Dataset Columns Used</h2>
+<ul>
+  <li>Data cleaning and preprocessing in Excel</li>
+  <li>Creating interactive dashboards using Pivot Tables</li>
+  <li>Visualizing restaurant business insights</li>
+  <li>Analyzing customer behavior and engagement trends</li>
+</ul>
 
-    <table>
-      <tr>
-        <th>Column Name</th>
-        <th>Description</th>
-      </tr>
+<h2> Contact</h2>
 
-      <tr>
-        <td>name</td>
-        <td>Restaurant name</td>
-      </tr>
-
-      <tr>
-        <td>online_order</td>
-        <td>Availability of online ordering</td>
-      </tr>
-
-      <tr>
-        <td>book_table</td>
-        <td>Table booking availability</td>
-      </tr>
-
-      <tr>
-        <td>rate</td>
-        <td>Restaurant rating</td>
-      </tr>
-
-      <tr>
-        <td>votes</td>
-        <td>Customer votes received</td>
-      </tr>
-
-      <tr>
-        <td>approx_cost(for two people)</td>
-        <td>Approximate dining cost for two people</td>
-      </tr>
-
-      <tr>
-        <td>listed_in(type)</td>
-        <td>Restaurant category/type</td>
-      </tr>
-    </table>
-
-    <h2>Dashboard Features</h2>
-
-    <ul>
-      <li>Interactive slicers for restaurant category filtering</li>
-      <li>Customer vote analysis</li>
-      <li>Average rating comparison</li>
-      <li>Average cost analysis</li>
-      <li>Online order analysis</li>
-      <li>Table booking analysis</li>
-      <li>Dynamic charts and visual reports</li>
-    </ul>
-
-    <h2>Key Insights</h2>
-
-    <ul>
-      <li>Identified the most popular restaurant categories</li>
-      <li>Compared customer engagement across restaurant types</li>
-      <li>Analyzed online ordering trends</li>
-      <li>Studied table booking availability patterns</li>
-      <li>Evaluated restaurant pricing and rating relationships</li>
-    </ul>
-
-    <h2>Tools & Technologies Used</h2>
-
-    <div>
-      <span class="badge">Microsoft Excel</span>
-      <span class="badge">Pivot Tables</span>
-      <span class="badge">Pivot Charts</span>
-      <span class="badge">Slicers</span>
-      <span class="badge">Data Analysis</span>
-      <span class="badge">Dashboard Design</span>
-    </div>
-
-    <h2>Project Objectives</h2>
-
-    <ul>
-      <li>To analyze restaurant business trends</li>
-      <li>To visualize customer engagement data</li>
-      <li>To create an interactive dashboard experience</li>
-      <li>To generate business insights from restaurant data</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-
-    <p>
-      This dashboard demonstrates how Microsoft Excel can be used effectively
-      for business intelligence and restaurant data analysis. The project converts
-      raw restaurant data into meaningful visual insights that help understand
-      customer behavior and restaurant performance.
-    </p>
-
-    <div class="footer">
-      Created for Data Analytics & Dashboard Portfolio Project
-    </div>
-
-  </div>
-
-</body>
-</html>
+<p>
+If you have any feedback or suggestions, feel free to connect!
+</p>
